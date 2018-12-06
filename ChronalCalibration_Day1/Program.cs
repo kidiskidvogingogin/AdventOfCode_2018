@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace ChronalCalibration_Day1
+namespace Day1_ChronalCalibration
 {
     class Program
     {
