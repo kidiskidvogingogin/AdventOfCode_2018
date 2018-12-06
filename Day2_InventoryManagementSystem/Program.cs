@@ -56,7 +56,6 @@ namespace Day2_InventoryManagementSystem
         private static void Part2()
         {
             var input = string.Empty;
-            var diffCount = 0;
             var id1 = string.Empty;
             var id2 = string.Empty;
             var commonLetters = string.Empty;
