@@ -28,32 +28,15 @@ namespace Day1_ChronalCalibration
             ISet<int> frequencies = new HashSet<int>();
             List<int> inputs = new List<int>();
             string input = string.Empty;
-            while((input = Console.ReadLine()) != "end")
-            {
+
+            while ((input = Console.ReadLine()) != "end")
                 inputs.Add(Convert.ToInt32(input));
-            }
-            int frequency = 0;
-            int index = 0;
-            int loopCount = 1;
-            bool firstIteraction = true;
-            while(!frequencies.Contains(frequency))
+
+            int frequency = 0, index = 0;
+            while (frequencies.Add(frequency))
             {
-                if (firstIteraction)
-                {
-                    frequencies.Add(0);
-                    firstIteraction = false;
-                }
-                else
-                {
-                    frequencies.Add(frequency);
-                }
-
-                frequency += inputs[index];
+                frequency += inputs[index % inputs.Count];
                 index++;
-                if(index == inputs.Count)
-                    index = 0;
-
-                loopCount++;
             }
             Console.WriteLine($"The answer is: {frequency}");
             Console.ReadLine();

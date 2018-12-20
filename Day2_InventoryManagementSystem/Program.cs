@@ -22,16 +22,11 @@ namespace Day2_InventoryManagementSystem
                 bool foundThree = false;
                 bool foundTwo = false;
                 for (int i = 0; i < input.Length; i++)
-                {
                     if (!charCount.ContainsKey(input[i]))
-                    {
                         charCount.Add(input[i], 1);
-                    }
                     else
-                    {
                         charCount[input[i]]++;
-                    }
-                }
+
                 foreach (KeyValuePair<char, int> kvp in charCount)
                 {
                     if (kvp.Value == 3 && !foundThree)
